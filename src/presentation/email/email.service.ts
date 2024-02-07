@@ -35,7 +35,6 @@ export class EmailService {
 
         try {
             const sendInformation = await this.transporter.sendMail({
-                from: 'direccionfalsa@mail.com',
                 to:to,
                 subject: subject,
                 html: htmlBody,
