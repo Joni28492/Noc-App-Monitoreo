@@ -24,10 +24,10 @@ export class Server {
 
         // const emailService = new EmailService()
         // emailService.sendEmailWithFileSystemLogs(
-        //     ['joni28492@gmail.com']
+        //     ['correo@gmail.com']
         // )
         // emailService.sendEmail({
-        //     to: 'joni28492@gmail.com',
+        //     to: 'correo@gmail.com',
         //     subject: 'logs de sistema',
         //     htmlBody: `
         //         <h3>Logs de sistema - NOC</h3>
