@@ -3,3 +3,9 @@ dist/
 
 # Logs
 .DS_Store
+
+logs/
+
+
+#env
+.env
