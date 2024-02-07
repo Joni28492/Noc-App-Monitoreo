@@ -24,7 +24,7 @@ export class Server {
 
         // const emailService = new EmailService()
         // emailService.sendEmailWithFileSystemLogs(
-        //     ['joni28492@gmail.com', 'monkeylimmit@gmail.com']
+        //     ['joni28492@gmail.com']
         // )
         // emailService.sendEmail({
         //     to: 'joni28492@gmail.com',
