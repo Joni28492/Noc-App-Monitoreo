@@ -1,5 +1,6 @@
 node_modules/
 dist/
+mongo/
 
 # Logs
 .DS_Store
