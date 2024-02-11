@@ -1,5 +1,6 @@
 import { envs } from "../config/plugins/envs.plugin";
 import { CheckService } from "../domain/use-cases/checks/check-services";
+import { SendEmailLogs } from "../domain/use-cases/email/send-email-logs";
 import { FileSystemDatasource } from "../infrastructure/datasources/file-system.datasource";
 import { LogRepositoryImpl } from "../infrastructure/repositories/log.repository.impl";
 import { CronService } from "./cron/cron-service";
@@ -13,7 +14,7 @@ const fileSystemLogRepository = new LogRepositoryImpl(
 
 )
 
-
+const emailService = new EmailService();
 
 export class Server {
     public static start(){
@@ -21,10 +22,16 @@ export class Server {
 
 
         //mandar email
+        //? con el use case
+        // new SendEmailLogs(
+        //     emailService,
+        //     fileSystemLogRepository
+        // ).execute(['joni28492@gmail.com'])
 
-        // const emailService = new EmailService()
+
+        //? con la inyeccion
         // emailService.sendEmailWithFileSystemLogs(
-        //     ['correo@gmail.com']
+        //     ['joni28492@gmail.com']
         // )
         // emailService.sendEmail({
         //     to: 'correo@gmail.com',
